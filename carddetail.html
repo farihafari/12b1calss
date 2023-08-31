@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="row" id="show_carddetail">
+         
+        </div>
+
+
+     
+    </div>
+
+
+    <script>
+         var p_detail = "";
+         var qrcode_detail = "";
+        fetch('card.json') //method js
+        .then((response) => response.json()) //promise 
+        .then((json) =>
+        {
+            var url = window.location.href;
+
+            var p_id = url.substring(url.lastIndexOf('=') +1)
+
+var row =  document.getElementById("show_carddetail");
+            for(var i in json.iphone)
+            {
+                if(json.iphone[i].id==p_id)
+                {
+                    qrcode_detail =
+
+                `
+                 TITLE : ${json.iphone[i].title} 
+                 PRICE : ${json.iphone[i].price} 
+                 DESC : ${json.iphone[i].desc} 
+                `
+
+
+                    p_detail +=
+                    `
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+<img src="${json.iphone[i].img}" style="width: 100%; height: 500px;" alt="">
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+<h1>${json.iphone[i].title}</h1>
+<p>${json.iphone[i].price}</p>
+<p>${json.iphone[i].desc}</p>
+<input type="number">
+
+<div>
+            <img src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${qrcode_detail}' alt="">
+        </div>
+            </div>
+                    `
+                }
+            }
+
+            row.innerHTML = p_detail;
+        });
+    </script>
+</body>
+</html>

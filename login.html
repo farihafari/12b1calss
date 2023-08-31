@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-info mt-3 py-2">login form</h1>
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">email</label>
+            <input type="email" class="form-control" id="uemail" value=""  required>
+            
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="upass" aria-describedby="inputGroupPrepend" required>
+            </div>
+          </div>
+         
+    
+          <div class="col-12">
+            <button class="btn btn-primary" type="button" id="btn" >Submit form</button>
+          </div>
+        </form>
+    </div>
+<script>
+    document.querySelector("#btn").addEventListener("click",function(){
+
+        let userEmail= document.querySelector("#uemail").value;
+        let userPassword= document.querySelector("#upass").value;
+    // let local_email = localStorage.getItem("email");
+    // let local_password= localStorage.getItem("password");
+    // if(userEmail && userPassword){
+    //     if(userEmail==local_email && userPassword ==local_password){
+    //         alert("logged in successfuly");
+    //         window.open("admin.html");
+    //     }else{
+    //         alert("invalid data");
+            
+    //     }
+    // }else{
+    //     alert("all fields are requiredto fill");
+    // }
+    let data = JSON.parse(localStorage.getItem('data'));
+    // console.log(data)
+    for(let val of data){
+      // console.log(val.email+" "+ val.password);
+      
+     if(val.email==userEmail && val.password==userPassword){
+        alert("logged in successfuly");
+            // window.open("admin.html");
+            window.location.href="admin.html";
+            break;
+      }
+       else {
+            alert("invalid data");
+          
+        }
+      
+    }
+    
+    })
+    // let x = localStorage;
+    // console.log(x);
+</script>
+</body>
+</html>

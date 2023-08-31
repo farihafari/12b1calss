@@ -1,0 +1,35 @@
+{
+    "iphone":
+    [
+    {
+        "id": 1,
+        "title" : "iphone 15",
+        "desc" : "128GB/256GB/1TB storage, no card slot",
+        "price": "2500000",
+        "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQchAu3MqmX4Np8ahDS4Mw0EF99NKchtu4xuA&usqp=CAU"
+    },
+
+    {
+        "id": 2,
+        "title" : "Iphone 12 pro",
+        "desc" : "228g7.4mm thickness",
+        "price": "200000",
+        "img" : "https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-12-pro-max/iphone-12-pro-max-silver.jpg"
+    },
+    {
+        "id": 3,
+        "title" : "Iphone 13 pro",
+        "desc" : "228g7.4mm thickness",
+        "price": "200000",
+        "img" : "https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-12-pro-max/iphone-12-pro-max-silver.jpg"
+    },
+    {
+        "id": 4,
+        "title" : "Iphone 14 pro",
+        "desc" : "228g7.4mm thickness",
+        "price": "200000",
+        "img" : "https://cdn.alloallo.media/catalog/product/apple/iphone/iphone-12-pro-max/iphone-12-pro-max-silver.jpg"
+    }   
+]
+
+}

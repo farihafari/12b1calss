@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "infinix",
+        "model": "abc 11",
+        "price": 45000,
+        "image": "images/i1.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 2,
+        "name": "infinix",
+        "model": "abc 12",
+        "price": 45000,
+        "image": "images/i2.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 3,
+        "name": "iphone",
+        "model": "pro 11",
+        "price": 45000,
+        "image": "images/i3.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 4,
+        "name": "techno",
+        "model": "camon",
+        "price": 45000,
+        "image": "images/i4.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 5,
+        "name": "infinix",
+        "model": "abc 12",
+        "price": 45000,
+        "image": "images/i5.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 6,
+        "name": "iphone",
+        "model": "xyz 12",
+        "price": 45000,
+        "image": "images/i6.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 7,
+        "name": "techno",
+        "model": "tyr 2",
+        "price": 45000,
+        "image": "images/i1.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 8,
+        "name": "infinix",
+        "model": "cv 3",
+        "price": 45000,
+        "image": "images/i2.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    },
+    {
+        "id": 9,
+        "name": "infinix",
+        "model": "ab 122 ",
+        "price": 45000,
+        "image": "images/i3.jpg",
+        "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy"
+    }
+]
